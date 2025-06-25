@@ -14,3 +14,9 @@ const projects = [
     sqlQuery: "provide SQL code for query here"
   }
 ];
+
+app.get('/', (req, res) => {
+  res.render('index', { projects });
+});
+
+
