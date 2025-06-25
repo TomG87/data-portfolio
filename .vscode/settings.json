@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.ejs": "ejs"  // More accurate than "html"
+  },
+  "emmet.includeLanguages": {
+    "ejs": "html"   // Enables Emmet autocomplete
+  }
+}
