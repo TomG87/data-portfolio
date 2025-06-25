@@ -1,0 +1,30 @@
+.body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.tableau-viz {
+  margin: 30px 0;
+}
+
+.sql-query pre {
+  background: #f4f4f4;
+  padding: 15px;
+  overflow-x: auto;
+  border-left: 3px solid #0078d7;
+}
+
+.nav a {
+  margin-right: 15px;
+  text-decoration: none;
+}
