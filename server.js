@@ -19,4 +19,12 @@ app.get('/', (req, res) => {
   res.render('index', { projects });
 });
 
+app.get('/projects/:id', (req, res) => {
+  const project = projects.find(p => p.id === parseInt(req.params.id));
+  res.render('project', { project });
+});
 
+const PORT = process.env.Port || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`)
+});
