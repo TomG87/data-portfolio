@@ -5,31 +5,48 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-image: url('https://cdn.vectorstock.com/i/500p/83/02/abstract-light-blue-background-with-flowing-vector-54338302.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background: 
+  url('https://cdn.vectorstock.com/i/500p/83/02/abstract-light-blue-background-with-flowing-vector-54338302.jpg') 
+  center/cover no-repeat fixed;
   min-height: 100vh;
 }
 
 .project-card {
-  background: #d7e9f8;
+  background: rgba(215, 233, 248, 0.85); 
   border-radius: 8px;
   padding: 1.5rem;
   margin: 2rem auto;
   width: 80%;
   max-width: 600px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  backdrop-filter: blur(2px); 
+}
+
+.tableau-wrapper {
+  position: relative;
+  min-height: 600px;
+  border-radius: 8px;
+  margin: 2rem 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.tableau-content {
+  position: relative;
+  height: 100%;
+  padding: 20px;
 }
 
 .sql-query pre {
-  background: #f4f4f4;
+  background: rgba(244, 244, 244, 0.9);
   padding: 15px;
   overflow-x: auto;
   border-left: 3px solid #0078d7;
 }
 
-.nav a {
-  margin-right: 15px;
-  text-decoration: none;
+nav {
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+  text-align: center;
 }
