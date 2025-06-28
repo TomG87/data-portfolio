@@ -5,10 +5,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav>
-      <a href="/">Home</a>
-    </nav>
-    
+
     <div class="tableau-wrapper">
         <div class="tableau-content">
             <% if (project && project.tableauUrl) { %>
@@ -26,9 +23,13 @@
                     Visualization not available
                 </div>
             <% } %>
+            <div class="project-description">
+              <h2>Project Analysis</h2>
+              <p><%= project.description %></p>
               <nav>
                 <a href="/">Home Page</a>
               </nav>
+            </div>
         </div>
     </div>
 </body>
