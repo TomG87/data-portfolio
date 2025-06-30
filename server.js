@@ -14,26 +14,29 @@ const projects = [
       "Analyzed correlation between Spotify popularity scores and YouTube views for top tracks, identifying high-potential cross-promotion opportunities.",
     tableauUrl:
       "https://public.tableau.com/views/spotify_youtube_analysis/Sheet1?:embed=true",
-    sqlQuery: `-- Cleaned Spotify/YouTube dataset
-      SELECT 
-        Artist,
-        Track,
-        CAST(REPLACE("Spotify Popularity", ",", "") AS INTEGER) AS Popularity,
-        CAST(REPLACE("Spotify Playlist Count", ",", "") AS INTEGER) AS PlaylistCount,
-        CAST(REPLACE("YouTube Views", ",", "") AS INTEGER) AS YouTubeViews
-      FROM "spotify_dataset"
-      WHERE "YouTube Views" IS NOT NULL 
-        AND "Spotify Popularity" IS NOT NULL
-      ORDER BY Popularity DESC
-      LIMIT 50;`,
+    // sqlQuery: `-- Cleaned Spotify/YouTube dataset
+    //   SELECT
+    //     Artist,
+    //     Track,
+    //     CAST(REPLACE("Spotify Popularity", ",", "") AS INTEGER) AS Popularity,
+    //     CAST(REPLACE("Spotify Playlist Count", ",", "") AS INTEGER) AS PlaylistCount,
+    //     CAST(REPLACE("YouTube Views", ",", "") AS INTEGER) AS YouTubeViews
+    //   FROM "spotify_dataset"
+    //   WHERE "YouTube Views" IS NOT NULL
+    //     AND "Spotify Popularity" IS NOT NULL
+    //   ORDER BY Popularity DESC
+    //   LIMIT 50;`,
   },
   {
     id: 2,
-    title: "Second Project Title", // Changed for uniqueness
-    description: "Second project description here.",
-    tableauUrl: "tableau website route",
-    sqlQuery: `-- Second SQL query here
-      SELECT ...`,
+    title:
+      "EV Performance Analysis: Top Speed (mph) vs 0-100 Acceleration (s) by Brand",
+    description:
+      "A data visualization exploring the relationship between top speed and acceleration in electric vehicles, with color-coding for acceleration tiers (Performance/Standard/Comfort) and battery capacity sizing.",
+    tableauUrl:
+      "https://public.tableau.com/views/EVtopspeedvsaccelerationgraph/Sheet2?:embed=y&:showVizHome=no",
+    // sqlQuery: `-- Second SQL query here
+    //   SELECT ...`,
   },
 ];
 
