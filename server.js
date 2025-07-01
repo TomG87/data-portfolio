@@ -38,6 +38,16 @@ const projects = [
     // sqlQuery: `-- Second SQL query here
     //   SELECT ...`,
   },
+  {
+    id: 3,
+    title: "EV Battery Capacity (kWh) vs. Driving Range (miles) Distribution",
+    description:
+      "Interactive visualization analyzing the relationship between battery size and range in EVs. Highlights key engineering trade-offs using mark size and color encoding",
+    tableauUrl:
+      "https://public.tableau.com/views/ev_peformance_analysis/Battery_vs_Range?:embed=y&:showVizHome=no",
+    // sqlQuery: `-- Second SQL query here
+    //   SELECT ...`,
+  },
 ];
 
 app.get("/", (req, res) => {
