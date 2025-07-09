@@ -93,6 +93,12 @@ nav {
   margin: 2rem 0;
 }
 
+.contact-section {
+  background: rgba(255,255,255,0.9);
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
 .footer {
   text-align: center;
 }
