@@ -4,21 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tom's Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-  <main>
-    <h1 class="project_title">Tom's Data Visualization Portfolio</h1>
+  <nav>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Tom Gagliano</h1>
+    <p class="subtitle">Data Analyst & Scrum Master</p>
+    <p class="tagline">Transforming complex data into actionable insights</p>
+  </header>
+
+  <main id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
     
-    <% projects.forEach(project => { %>
-      <div class="project-card">
-        <h2><%= project.title %></h2>
-        
-        <a href="/projects/<%= project.id %>">View Project</a>
-      </div>
-    <% }); %>
+
+    <div class="projects-grid">
+      <% projects.forEach(project => { %>
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <h3><%= project.title %></h3>
+          <p class="project-desc">Data analysis using Python and SQL</p>
+          <a href="/projects/<%= project.id %>" class="project-btn">View Project</a>
+        </div>
+      <% }); %>
+    </div>
   </main>
+
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>Data professional with expertise in Python, SQL, and Tableau. Certified Scrum Master with experience at Bloomberg LP delivering data solutions.</p>
+    </div>
+  </section>
+
   <%- include('_partials/footer') %>
 </body>
 </html>
