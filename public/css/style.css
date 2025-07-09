@@ -29,21 +29,18 @@ h1, h2, h3 {
 }
 
 .hero h1 {
-  -webkit-text-stroke: 1px #2D3748; 
-  -webkit-text-fill-color: white;    
-  text-stroke: 1px #2D3748;         
-  paint-order: stroke fill;         
-}
-
-.hero .subtitle {
   -webkit-text-stroke: 1px #2D3748;
   -webkit-text-fill-color: white;
   text-stroke: 1px #2D3748;
+  paint-order: stroke fill;     
 }
 
+.hero .subtitle,
 .hero .tagline {
   -webkit-text-stroke: 1px #2D3748;
   -webkit-text-fill-color: white;
+  text-stroke: 1px #2D3748;
+  paint-order: stroke fill;  
 }
 
 .projects-grid {
@@ -104,4 +101,8 @@ h1, h2, h3 {
 
 html {
   scroll-behavior: smooth;
+}
+
+.about-section p {
+  text-align: center;
 }
